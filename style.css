@@ -7,18 +7,17 @@
 
 header {
   display: flex;
-  max-width: 1920px;
+  width: 100%;
   flex-direction: column;
 }
 
 .orange-image {
   background-image: image("Imagens/laranja azul recorte.png");
-  max-width: 1920px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  align-self: center;
-  object-fit: cover;
+  background-color: #0079cc;
+  width: 100%;
+  height: 93.5vh;
+  background-repeat: no-repeat;
+  align-items: center;
 }
 
 .menu {
@@ -40,24 +39,139 @@ header {
 }
 
 .logo-list {
-  background: yellow;
-  display: flex;
-  max-width: 1920px;
+  background: white;
+  width: 100%;
   height: 15vh;
-  justify-content: space-evenly;
+  display: flex;
   align-items: center;
 }
 
 h1 {
-  background: green;
-  width: 30%;
-  height: 15vh;
-  text-align: center;
+  width: 42%;
+  height: 100%;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding-left: 142px;
 }
 
 ul {
-  background: red;
-  width: 200%;
+  width: 100%;
+  font-size: 1.5rem;
+  display: flex;
+  padding-left: 330px;
+  font-family: montserrat, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+li {
+  width: 100%;
+  margin-right: 5px;
+  padding-right: 50px;
+}
+
+ul li {
+  cursor: pointer;
+}
+
+ul li:hover {
+  font-family: montserrat, sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+  color: black;
+}
+
+h2 {
+  color: white;
+  font-size: 4.5rem;
+  width: 1050px;
+  margin-left: 150px;
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  position: relative;
+  bottom: 450px;
+}
+
+h3 {
+  width: 1050px;
+  color: white;
+  font-size: 2rem;
+  font-family: montserrat, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  position: relative;
+  bottom: 380px;
+  left: 150px;
+}
+
+main {
+  padding-top: 100px;
+  width: 100%;
+  height: 135vh;
+}
+
+.top-main,
+.middle-main,
+.bottom-main {
+  width: 76%;
+  height: 38vh;
   display: flex;
   justify-content: space-evenly;
+  padding: 2px;
+  margin: 2px;
+  position: relative;
+  left: 240px;
+}
+
+main section figure img {
+  width: 370px;
+  heigh: 370px;
+}
+
+footer {
+  background-color: rgb(227, 247, 247);
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.social-medias {
+  width: 30%;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  right: 140px;
+}
+
+h4 {
+  font-size: 2rem;
+  padding-left: 5px;
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  position: relative;
+  right: 60px;
+}
+
+p {
+  font-size: 0.8rem;
+  width: 28%;
+  padding-left: 14px;
+  font-family: montserrat, sans-serif;
+  font-weight: 450;
+  font-style: normal;
+  font-style: normal;
+  position: relative;
+  right: 60px;
 }
