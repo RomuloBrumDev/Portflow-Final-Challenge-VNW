@@ -1,22 +1,23 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   list-style: none;
 }
 
 header {
-  width: 100%;
-  height: 75px;
   display: flex;
+  width: 100%;
   flex-direction: column;
-  align-items: flex-start;
 }
-.header-menu {
+
+.orange-image {
+  background-image: image("Imagens/laranja azul recorte.png");
+  background-color: #0079cc;
   width: 100%;
-  height: 75px;
-  display: flex;
-  justify-content: flex-start;
+  height: 93.5vh;
+  background-repeat: no-repeat;
+  align-items: center;
 }
 
 .menu {
