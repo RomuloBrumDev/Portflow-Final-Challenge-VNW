@@ -5,529 +5,182 @@
   list-style: none;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;800&display=swap");
+
 header {
+  background: white;
+  width: 100vw;
+  height: 122px;
   display: flex;
-  width: 100%;
   flex-direction: column;
+  justify-content: center;
 }
-
-.orange-image {
-  background-image: image("Imagens/laranja azul recorte.png");
-  background-color: #0079cc;
-  width: 100%;
-  height: 93.5vh;
-  background-repeat: no-repeat;
-  align-items: center;
-}
-
-.menu {
-  background: black;
-  width: 20%;
-  height: 75px;
-  display: none;
-  flex-direction: column;
+.header {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.line {
-  background: white;
-  width: 30px;
-  height: 0.5vh;
-  margin-top: 5px;
+.menu-buttom {
   display: flex;
-}
-
-header nav {
-  background: red;
-  width: 100%;
-  height: 75px;
-  display: flex;
-  flex-direction: row-reverse;
+  background: black;
+  width: 70%;
+  height: 27px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding-right: 35px;
 }
 
 h1 {
-  width: 40%;
-  height: 75px;
-  font-size: 2rem;
-  font-family: montserrat, sans-serif;
+  width: 30%;
+  height: 100%;
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-style: normal;
-  text-align: center;
   display: flex;
+  padding-left: 5px;
   justify-content: center;
   align-items: center;
+}
+.menu-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 ul {
-  background: green;
-  width: 70%;
-  height: 39px;
-  font-size: 1.3rem;
-  font-family: montserrat, sans-serif;
-  font-weight: 100;
-  font-style: normal;
+  width: 50%;
+  height: 6vh;
   display: flex;
-  align-items: center;
-  margin: 2px;
+  padding-right: 20px;
+  justify-content: right;
 }
 
 li {
-  width: 100%;
-  height: 30px;
+  width: 8vw;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  margin: 5px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
-  align-self: center;
-  margin-right: 10px;
-}
-
-ul li {
-  cursor: pointer;
 }
 
 ul li:hover {
-  font-family: montserrat, sans-serif;
-  font-weight: 1000;
-  font-style: normal;
-  color: black;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  background: purple;
+  width: 100vw;
+  height: 150vh;
 }
 
 .banner-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+  background: #007bd1 url(./Imagens/laranja\ azul\ recorte.png) center;
+  background-size: cover;
 
-.blue-orange {
-  width: 100%;
-  height: 80%;
-  object-fit: cover;
-  align-items: center;
-  position: relative;
-}
-
-.blue-orange--mobile {
-  display: none;
   width: 100vw;
-  height: 100vh;
+  height: 780px;
 }
 
-.blue-orange-cutted {
-  width: 100%;
-  height: 100%;
+h2,
+h3 {
+  color: white;
 }
 
 h2 {
-  width: 760px;
-  background: blue;
-  color: rgb(255, 255, 255);
-  font-size: 3.2rem;
-  font-family: montserrat, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  display: flex;
-  position: absolute;
-  left: 119px;
-  text-align: center;
-  justify-content: center;
-  top: 299px;
+  font-size: 5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  padding-left: 95px;
+  position: relative;
+  top: 305px;
+  left: 38px;
 }
 
 h3 {
-  color: rgb(255, 255, 255);
-  font-size: 1.2rem;
-  font-family: montserrat, sans-serif;
-  font-weight: 100;
-  font-style: normal;
-  position: absolute;
-  text-align: center;
-  justify-content: center;
-  bottom: 180px;
-  left: 120px;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  padding-left: 95px;
+  position: relative;
+  top: 360px;
+  left: 38px;
 }
 
-@media (max-width: 890px) {
-  header {
-    width: 100%;
-    height: 75px;
+@media (max-width: 480px) {
+  .menu-buttom {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  h1 {
-    width: 350px;
-    height: 75px;
-    font-size: 2rem;
-    font-family: montserrat, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .header-menu {
-    width: 100%;
-    height: 75px;
-  }
-
-  header nav {
-    background: red;
-    height: 75px;
-    width: 100%;
-    justify-content: space-evenly;
-  }
-
-  ul {
-    background: green;
-    width: 80%;
-    height: 39px;
-    font-size: 1.3rem;
-    font-family: montserrat, sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    display: flex;
-    align-items: center;
-  }
-
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .banner-container {
-    width: 100vw;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  figure {
-    background: rgb(226, 67, 120);
-    width: 150%;
-  }
-  .blue-orange {
-    width: 200%;
-    height: 100%;
-    object-fit: cover;
-    align-items: center;
-    position: relative;
-  }
-  .blue-orange-cutted {
-    display: none;
-    width: 100%;
-    height: 100%;
-  }
-
-  h2 {
     background: black;
-    width: 850px;
-    left: 220px;
-    top: 550px;
-    width: 760px;
-    color: rgb(255, 255, 255);
-    font-size: 3.2rem;
-    font-family: montserrat, sans-serif;
-    font-weight: 700;
-  }
-
-  h3 {
-    top: 330px;
-    left: 130px;
-  }
-}
-
-@media (max-width: 720px) {
-  h1 {
-    width: 350px;
-    height: 75px;
-    font-size: 2rem;
-    font-family: montserrat, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .header-menu {
-    width: 100%;
-  }
-
-  header nav {
-    background: rgb(219, 138, 138);
-    width: 90%;
-    justify-content: space-evenly;
-  }
-
-  ul {
-    background: rgb(108, 201, 108);
-    width: 80%;
-    height: 39px;
-    font-size: 1.3rem;
-    font-family: montserrat, sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    display: flex;
-    align-items: center;
-  }
-  main {
-    display: block;
-  }
-
-  .banner-container {
-    width: 100%;
-    display: flex;
-    border: 2px solid green;
-    flex-direction: column;
-  }
-
-  .blue-orange {
-    width: 200%;
-    height: 80%;
-    object-fit: cover;
-    align-items: center;
-    position: relative;
-  }
-
-  h2 {
-    width: 450px;
-    left: 50px;
-    top: 120px;
-  }
-
-  h3 {
-    color: black;
-    top: 3px;
-    left: 16px;
-    position: absolute;
-  }
-}
-
-@media (max-width: 630px) {
-  .menu {
-    background: black;
-    width: 90%;
-    height: 20vh;
-    padding: 10px;
+    width: 70%;
+    height: 27px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
   }
 
   .line {
     background: white;
-    width: 30px;
-    height: 0.5vh;
-    margin-top: 5px;
-    display: flex;
+    width: 25px;
+    height: 2px;
+    margin: 2px;
   }
 
-  menu:hover {
-    font-family: montserrat, sans-serif;
-    font-weight: 1000;
-    font-style: normal;
-    color: rgb(79, 53, 228);
-  }
-
-  .blue-orange-cutted {
-    width: 100%;
+  h1 {
+    width: 30%;
     height: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
-
-  ul {
-    display: none;
-  }
-
-  li {
-    display: none;
-  }
-
-  ul li {
-    display: none;
-  }
-
+  ul,
+  li,
   ul li:hover {
     display: none;
   }
 
-  h2 {
-    width: 220px;
-    position: absolute;
-    bottom: 295px;
-    left: 35px;
-  }
-
-  h3 {
-    position: absolute;
-    bottom: 260px;
-    left: 38px;
-  }
-}
-
-@media (max-width: 480px) {
-  header nav {
-    width: 90%;
-    height: 75px;
+  header {
+    background: white;
+    width: 100vw;
+    height: 27px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-around;
-  }
-
-  h1 {
-    width: 350px;
-    height: 60px;
-    font-size: 2rem;
-    padding-left: 40px;
-    font-family: montserrat, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-align: center;
-    display: flex;
     justify-content: center;
-    align-items: center;
   }
-
-  h2 {
-    width: 180px;
-    font-size: 3.5rem;
-    bottom: 35px;
-    display: flex;
-    position: relative;
-    left: 50px;
-    bottom: 345px;
-  }
-
-  h3 {
-    font-size: 1.1rem;
-    bottom: 150px;
-    left: 50px;
-    position: relative;
-  }
-
-  .blue-orange {
-    display: none;
-  }
-
-  .blue-orange-cutted {
-    display: flex;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .blue-orange {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: right;
-    position: relative;
+  main {
+    background: rgb(235, 80, 235);
+    width: 100vw;
+    height: 100vh;
   }
 
   .banner-container {
-    display: flex;
-    height: 100px;
-    width: 100%;
-    flex-direction: column;
+    background: #007bd1 url(./Imagens/laranja\ azul\ recorte\ resp.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100vw;
+    height: 640px;
   }
-}
 
-main {
-  display: flex;
-  flex-direction: column;
-}
-
-.imagens_main {
-  width: 83%;
-  height: 740px;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.all-images img {
-  width: 24%;
-  height: 40%;
-  display: inline-block;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  object-fit: contain;
-  position: relative;
-}
-
-@media (max-width: 720px) {
-  main {
-    width: 100%;
-    height: 100px;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  h2 {
+    font-size: 3rem;
+    padding-left: 20px;
+    position: relative;
+    top: 390px;
   }
-}
 
-@media (max-width: 480px) {
-  main {
-    width: 100%;
-    height: 100%;
+  h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    padding-left: 60px;
+    position: relative;
+    top: 415px;
   }
-}
-
-footer {
-  background-color: rgb(227, 247, 247);
-  width: 100%;
-  height: 15vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  position: relative;
-  top: 400px;
-}
-
-.social-medias {
-  width: 30%;
-  height: 80px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  position: relative;
-  right: 140px;
-}
-
-h4 {
-  font-size: 2rem;
-  padding-left: 5px;
-  font-family: montserrat, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  position: relative;
-  right: 60px;
-}
-
-p {
-  font-size: 0.8rem;
-  width: 28%;
-  padding-left: 14px;
-  font-family: montserrat, sans-serif;
-  font-weight: 450;
-  font-style: normal;
-  font-style: normal;
-  position: relative;
-  right: 60px;
 }
