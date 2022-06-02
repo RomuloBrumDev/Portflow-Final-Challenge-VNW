@@ -90,9 +90,8 @@ main {
 .banner-container {
   background: #007bd1 url(./Imagens/laranja\ azul\ recorte.png) center;
   background-size: cover;
-
   width: 100vw;
-  height: 780px;
+  min-height: 780px;
 }
 
 h2,
@@ -161,8 +160,66 @@ h3 {
     flex-direction: column;
     justify-content: center;
   }
+}
+
+  /*Início da Main*/
+
   main {
     background: rgb(235, 80, 235);
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  h2 {
+    font-size: 6.5rem;
+    padding-left: 172px;
+    position: relative;
+    top: 280px;
+}
+
+  h3 {
+    font-size: 3rem;
+    font-weight: 300;
+    padding-left: 180px;
+    position: relative;
+    top: 370px;
+}
+
+  .portifolio {
+    width: 90vw;
+    min-height: 200vh;
+    background: yellow;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+  .all-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main section figure img {
+    align-items: center;
+    width: 28vw;
+    height: 64vh;
+    display: flex;
+    object-fit: contain;
+  }
+
+
+  @media (max-width: 480px){
+  
+  main {
     width: 100vw;
     min-height: 100vh;
     flex-wrap: wrap;
@@ -172,9 +229,8 @@ h3 {
     background: #007bd1 url(./Imagens/laranja\ azul\ recorte\ resp.png) center;
     background-size: cover;
     background-repeat: no-repeat;
-
     width: 100vw;
-    height: 640px;
+    min-height: 640px;
   }
 
   h2 {
@@ -195,7 +251,6 @@ h3 {
   .portifolio {
     width: 100vw;
     min-height: 200vh;
-    background: yellow;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -216,6 +271,78 @@ h3 {
   }
 }
 
+/*Início da Fotter*/
+
+footer {
+  background: #f6f6f6;
+    width: 90vw;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+footer section {
+  width: 24vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer section figure {
+  display: flex;
+  background: none;
+  justify-content: space-evenly;
+  margin: 8px 0px;
+}
+
+footer section figure img {
+  width: 4vw;
+  height: 6vh;
+  object-fit: contain;
+}
+
+.info-footer {
+  width: 58vw;
+  height: 6vh;
+  min-height: 2vh;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+h4 {
+  font-size: 3rem;
+  width: 15vw;
+  text-align: center;
+}
+
+p {
+  font-size: 1.6rem;
+    width: 43vw;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    text-align: left;
+}
+
+button{
+  background: rgb(88, 88, 88);
+  color: rgb(145, 141, 141);
+  width: 68px;
+  height: 25px;
+  border:none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  position: relative;
+  left: 130px;
+  bottom:80px
+}
+
+button{
+  display: none;
+}
+
+@media (max-width: 480px){
 footer {
   width: 90vw;
   min-height: 180px;
@@ -272,4 +399,5 @@ button{
   position: relative;
   left: 130px;
   bottom:80px
+}
 }
