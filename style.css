@@ -321,7 +321,7 @@ main section figure img {
 
   .portifolio {
     width: 100vw;
-    min-height: 441vh;
+    min-height: 465vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -375,7 +375,8 @@ footer section figure img {
 }
 
 .info-footer {
-  width: 58vw;
+  ustify-content: space-between;
+  width: 60vw;
   height: 6vh;
   min-height: 2vh;
   margin-top: 5px;
@@ -460,7 +461,8 @@ button {
 
   footer section {
     width: 83vw;
-    height: 5vh;
+    height: 11vh;
+    margin-top: 16px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -511,17 +513,17 @@ button {
 @media (max-width: 480px) {
   footer {
     width: 90vw;
-    min-height: 180px;
+    min-height: 182px;
     display: flex;
     align-items: center;
     flex-direction: column;
     position: relative;
-    margin-top: 24px;
-    padding-top: 8px;
+    margin-top: 20px;
   }
 
   footer section {
     width: 90vw;
+    height: 10vh;
     background: #7fdbd4;
   }
 
@@ -555,15 +557,17 @@ button {
   }
 
   button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: rgb(88, 88, 88);
     color: rgb(145, 141, 141);
     width: 68px;
     height: 25px;
-    border: flex;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     position: relative;
     left: 130px;
-    bottom: 80px;
+    bottom: 60px;
   }
 }
