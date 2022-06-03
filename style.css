@@ -342,6 +342,54 @@ main section figure img {
     width: 90vw;
     height: 34vh;
   }
+
+  .erb {
+    order: 10;
+  }
+
+  .bread {
+    order: 8;
+  }
+
+  .ice-cream {
+    order: 3;
+  }
+
+  .tv-screen {
+    order: 6;
+  }
+
+  .cds {
+    order: 1;
+  }
+
+  .mug {
+    order: 7;
+  }
+
+  .desktop {
+    order: 4;
+  }
+
+  .cereal {
+    order: 11;
+  }
+
+  .cel-phone {
+    order: 11;
+  }
+
+  .tablet {
+    order: 12;
+  }
+
+  .photo-equip {
+    order: 2;
+  }
+
+  .polaroids {
+    order: 5;
+  }
 }
 
 /*Início da Fotter*/
